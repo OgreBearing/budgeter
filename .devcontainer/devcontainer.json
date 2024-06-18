@@ -17,9 +17,7 @@
 				"eamodio.gitlens",
 				"GitHub.vscode-github-actions",
 				"haydenbleasel.vercel-vscode",
-				"1YiB.svelte-bundle",
-				"bradlc.vscode-tailwindcss",
-				"austenc.tailwind-docs"
+				"1YiB.svelte-bundle"
 			]
 		}
 	},
