@@ -5,6 +5,7 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
+  	"workspaceFolder": "/workspaces/budgeter",
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/prisma:2": {},
 		"ghcr.io/devcontainers-contrib/features/supabase-cli:1": {},
