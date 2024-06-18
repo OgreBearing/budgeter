@@ -28,7 +28,10 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	 "forwardPorts": [5173],
+	 "forwardPorts": [
+		5173,
+		6006
+	],
 	 "otherPortsAttributes": {
 	   "onAutoForward": "ignore"
 	 }

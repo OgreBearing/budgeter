@@ -1,38 +1,58 @@
 {
-	"name": "budgeter",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "npm run test:integration && npm run test:unit",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write .",
-		"test:integration": "playwright test",
-		"test:unit": "vitest"
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.44.1",
-		"@sveltejs/adapter-auto": "^3.2.2",
-		"@sveltejs/kit": "^2.5.16",
-		"@sveltejs/vite-plugin-svelte": "^3.1.1",
-		"@types/eslint": "^8.56.10",
-		"eslint": "^9.5.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.39.5",
-		"globals": "^15.6.0",
-		"prettier": "^3.3.2",
-		"prettier-plugin-svelte": "^3.2.4",
-		"svelte": "^4.2.18",
-		"svelte-check": "^3.8.0",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"typescript-eslint": "^8.0.0-alpha.20",
-		"vite": "^5.0.3",
-		"vitest": "^1.2.0"
-	},
-	"type": "module"
+  "name": "budgeter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "npm run test:integration && npm run test:unit",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "test:integration": "playwright test",
+    "test:unit": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@playwright/test": "^1.44.1",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/svelte": "^8.1.10",
+    "@storybook/sveltekit": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@sveltejs/adapter-auto": "^3.2.2",
+    "@sveltejs/kit": "^2.5.16",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/eslint": "^8.56.10",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-svelte": "^2.40.0",
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-svelte": "^3.2.4",
+    "storybook": "^8.1.10",
+    "svelte": "^4.2.18",
+    "svelte-check": "^3.8.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.0.0-alpha.20",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0"
+  },
+  "type": "module",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "dependencies": {
+    "@storybook/addon-svelte-csf": "^4.1.3"
+  }
 }
