@@ -18,7 +18,9 @@
 				"eamodio.gitlens",
 				"GitHub.vscode-github-actions",
 				"haydenbleasel.vercel-vscode",
-				"1YiB.svelte-bundle"
+				"1YiB.svelte-bundle",
+				"GitHub.copilot-chat",
+				"GitHub.copilot"
 			]
 		}
 	},
