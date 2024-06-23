@@ -7,6 +7,9 @@
 	"service": "app",
   	"workspaceFolder": "/workspaces/budgeter",
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/prisma:2": {},
+		"ghcr.io/devcontainers-contrib/features/supabase-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/turborepo-npm:1": {},
 		"ghcr.io/devcontainers-contrib/features/vercel-cli:1": {}
 	},
 	"customizations": {
